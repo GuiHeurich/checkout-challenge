@@ -21,3 +21,7 @@ shop.checkout('AAAAAA') # => 260
 ### What are the naive or edge cases?
 
 --
+
+## How to use this program
+
+Clone this repo and run `bundle install` to get started
