@@ -4,11 +4,12 @@ require 'shop'
 
 describe Shop do
   subject(:shop) { described_class.new }
-  # shop.checkout(18) # => -1
   describe '#checkout' do
-    context 'when receives an integer as input'
+    context 'when receives an illegal input'
     it 'returns -1' do
       expect(shop.checkout(18)).to equal(-1)
+      expect(shop.checkout('-B8x')).to equal(-1)
+      expect(shop.checkout('aBc')).to equal(-1)
     end
   end
 end
